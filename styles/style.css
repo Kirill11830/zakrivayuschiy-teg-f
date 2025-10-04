@@ -1,12 +1,15 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
 
@@ -194,8 +197,8 @@
   filter: grayscale(80%);
 }
 
-.article__img--hue-rotate {
-  filter: hue-rotate(90deg);
+.article__img--hue-blur {
+  filter: hue-rotate(45deg) blur(2px);
 }
 
 .article__img--mix {
@@ -414,6 +417,7 @@
   inline-size: var(--floppy-size, 28px);
   block-size: var(--floppy-size, 28px);
   mix-blend-mode: difference;
+  flex-shrink: 0;
 }
 
 .modal[open] {
