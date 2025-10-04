@@ -179,7 +179,7 @@
 }
 
 .article__img--blur {
-  filter: blur(4px);
+  filter: blur(5px) grayscale(1);
 }
 
 .article__img--brightness {
