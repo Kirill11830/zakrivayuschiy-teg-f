@@ -268,7 +268,7 @@
             <source type="image/webp" media="(width <= 375px)" srcset="./images/car-image-mobile.webp">
             <source type="image/webp" srcset="./images/car-image-mobile.webp">
             <source type="image/png" media="(width <= 375px)" srcset="./images/car-image-mobile.jpg">
-            <img class="article__img article__img--hue-rotate" src="./images/car-image-mobile.jpg" alt="Хочу отдохнуть. Неделю не буду касаться кода." loading="lazy">
+            <img class="article__img article__img--hue-blur" src="./images/car-image-mobile.jpg" alt="Хочу отдохнуть. Неделю не буду касаться кода." loading="lazy">
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -293,19 +293,19 @@
         </div>
       </article>
     </main>
-    <footer class="footer">
+    <article class="article-save">
       <button class="button save-button" type="button" onclick="window['dialog'].showModal()" aria-controls="dialog"> 
         <svg class="floppy">
-           <use href="./svg/floppy.svg"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">
           Сохранить на память
         </span>
-      </button>
-    </footer>
+      </article>
+    </dialog>
     <dialog id="dialog" class="modal">
       <svg class="floppy floppy--modal">
-        <use href="./svg/floppy.svg"></use>
+        <use href="./svg/floppy.svg#floppy"></use>
       </svg>
       <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
       <button type="button" class="button save-button modal__button" onclick="window['dialog'].close()">
