@@ -39,7 +39,7 @@
   align-items: center;
   border: 2px solid var(--main-color, #000);
   padding-block: clamp(130px, 10vw, 130px) 24px;
-  font-family: var(--font-accent, "Courier New", monospace);
+  font-family: var(--font-accent), monospace;
   text-transform: uppercase;
   background-color: var(--bg-color, #fff);
   width: 700px;
