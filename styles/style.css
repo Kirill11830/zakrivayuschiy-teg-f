@@ -1,8 +1,6 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
@@ -15,7 +13,7 @@
 
 .page {
   color: var(--main-color, #000);
-  font-family: var(--font, Arial, sans-serif);
+  font-family: var(--font), Arial, sans-serif;
   line-height: normal;
   background-color: var(--bg-color, #fff);
   background-image: var(--bg-image);
@@ -27,7 +25,7 @@
 }
 
 .header {
-  padding-block: 98px;
+  padding-block: 99px;
 }
 
 .container {
@@ -45,7 +43,8 @@
   text-transform: uppercase;
   background-color: var(--bg-color, #fff);
   width: 700px;
-  height: 372px;
+  min-height: 368px;
+  overflow: hidden;
   opacity: 1;
   border-width: 2px;
 }
@@ -265,6 +264,7 @@
 .contour {
   fill: var(--heart-hover, #000);
   transition-duration: 0.1s;
+  animation-timing-function: linear;
 }
 
 .core {
@@ -276,6 +276,7 @@
 .like-icon {
   width: 39px;
   height: 36px;
+  transform-origin: center;
 }
 
 .like-icon:hover .core {
@@ -407,15 +408,16 @@
 }
 
 .article-save {
-  padding-block: 50px 105px;
+  padding-block: 0px 105px;
 }
 
 .floppy {
   position: relative;
   z-index: 1;
-  color: var(--button-text-color, #000);
+  color: var(--button-text-color, #fff);
   inline-size: var(--floppy-size, 28px);
   block-size: var(--floppy-size, 28px);
+  mix-blend-mode: difference;
   flex-shrink: 0;
 }
 
