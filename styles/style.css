@@ -451,3 +451,10 @@
 .modal::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
+
+@media (width <= 375px) {
+  .header__container {
+    max-width: 375px;
+    max-height: 327px;
+  }
+}
