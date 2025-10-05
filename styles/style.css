@@ -379,7 +379,7 @@
   position: relative;
   z-index: 1;
   color: var(--button-text-color, #fff);
-  font-family: var(--font-accent, "Courier New", monospace);
+  font-family: var(--font-accent), monospace;
   font-size: var(--accent-font-size, 0.875rem);
   line-height: 0.9;
   mix-blend-mode: difference;
@@ -428,7 +428,7 @@
   column-gap: clamp(12px, 2vw, 20px);
   padding: var(--modal-padding-inline, 30px) 30px;
   color: var(--main-color, #000);
-  font-family: var(--font-accent, "Courier New", monospace);
+  font-family: var(--font-accent), monospace;
   font-size: var(--accent-font-size, 0.875rem);
   line-height: 1.5;
   text-transform: uppercase;
