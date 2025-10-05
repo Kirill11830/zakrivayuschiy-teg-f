@@ -384,6 +384,7 @@
   font-family: var(--font-accent), monospace;
   font-size: var(--accent-font-size, 0.875rem);
   line-height: 0.9;
+  animation-timing-function: linear;
   mix-blend-mode: difference;
 }
 
