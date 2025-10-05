@@ -212,7 +212,7 @@
   position: absolute;
   opacity: 0.5;
   color: var(--main-color, #000);
-  font-family: var(--font-accent, "Courier New", monospace);
+  font-family: var(--font-accent), monospace;
   font-size: var(--accent-font-size, 0.875rem);
   text-transform: uppercase;
   text-shadow: -1px 0 var(--bg-color, #fff), 0 1px var(--bg-color, #fff),
