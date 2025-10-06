@@ -272,7 +272,6 @@
   fill: transparent;
   transition-delay: 0.03s;
   transition-duration: 0.3s;
-  animation-timing-function: linear;
 }
 
 .like-icon {
@@ -309,6 +308,7 @@
   fill: #ff0000;
   transition-delay: 0.05s;
   transition-duration: 0.3s;
+  animation-timing-function: linear;
 }
 
 .like-icon.is-liked .core {
@@ -321,6 +321,7 @@
   fill: #ff0000;
   transition-delay: 0.05s;
   transition-duration: 0.3s;
+  animation-timing-function: linear;
 }
 
 .like-icon.is-liked .contour {
@@ -350,7 +351,7 @@
   border: 2px solid var(--main-color, #000);
   padding: 0;
   background-color: var(--bg-color, #fff);
-  animation-timing-function: ease;
+  animation-timing-function: linear;
   cursor: pointer;
 }
 
@@ -382,10 +383,9 @@
   position: relative;
   z-index: 1;
   color: var(--button-text-color, #fff);
-  font-family: var(--font-accent), monospace;
+  font-family: var(--font-accent);
   font-size: var(--accent-font-size, 0.875rem);
-  line-height: 0.9;
-  animation-timing-function: linear;
+  line-height: 90%;
   mix-blend-mode: difference;
 }
 
@@ -417,11 +417,9 @@
 
 .floppy {
   position: relative;
-  z-index: 1;
-  color: var(--button-text-color, #fff);
+  z-index: 2;
   inline-size: var(--floppy-size, 28px);
   block-size: var(--floppy-size, 28px);
-  mix-blend-mode: difference;
   flex-shrink: 0;
 }
 
@@ -445,8 +443,16 @@
   line-height: 1.5;
 }
 
+.modal__icon {
+  grid-area: icon;
+  width: 39px;
+  height: 39px;
+  color: var(--accent-color);
+}
+
 .floppy--modal {
   --floppy-size: 38px;
+  margin: auto;
 }
 
 .modal::backdrop {
@@ -459,3 +465,4 @@
     max-height: 327px;
   }
 }
+
