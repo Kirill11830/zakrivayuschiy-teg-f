@@ -153,18 +153,11 @@
 .article__body {
   display: flex;
   flex-direction: column;
-  padding: 23.5px;
+  padding: 23.3px;
   font-size: var(--main-font-size);
   line-height: 1.16667;
-  max-width: 700px;
-}
-
-.article__text {
-  margin-block: 0 27px;
-}
-
-.article__text:last-child {
-  margin-block-end: 25px;
+  max-width: 692px;
+  gap:27px;
 }
 
 .article__img-wrapper {
