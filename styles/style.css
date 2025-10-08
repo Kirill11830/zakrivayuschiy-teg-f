@@ -42,7 +42,7 @@
   font-family: var(--font-accent, "Courier New"), monospace;
   text-transform: uppercase;
   background-color: var(--bg-color, #fff);
-  width: 700px;
+  max-width: 700px;
   min-height: 368px;
   overflow: hidden;
   opacity: 1;
@@ -157,7 +157,11 @@
   font-size: var(--main-font-size);
   line-height: 1.16667;
   max-width: 692px;
-  gap:27px;
+  gap: 27px;
+}
+
+.article__text:last-child {
+  margin-block-end: 25px;
 }
 
 .article__img-wrapper {
@@ -456,8 +460,21 @@
 }
 
 @media (width <= 375px) {
+  .header {
+    padding-block: 100px;
+  }
+
   .header__container {
+    padding-block: clamp(120px, 10vw, 130px) 24px;
     max-width: 375px;
-    max-height: 327px;
+    min-height: 327px;
+  }
+
+  .article__body {
+    padding: 25px;
+  }
+
+  .main__container {
+    gap: 47px;
   }
 }
